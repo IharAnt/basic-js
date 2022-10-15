@@ -22,7 +22,6 @@ function transform(arr) {
     switch (arr[i]) {
       case '--discard-next':
         arr.splice(i+1, 1);
-        //i++;
         break;
       case '--discard-prev':
         if(arr[i-1] && !arr[i-1].toString().includes('--')) {
