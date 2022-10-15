@@ -23,7 +23,7 @@ function calculateHanoi(disksNumber, turnsSpeed) {
   }
 }
 
-let r = calculateHanoi(9, 4308);
+//let r = calculateHanoi(9, 4308);
 
 module.exports = {
   calculateHanoi
