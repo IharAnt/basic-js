@@ -30,7 +30,7 @@ function createDreamTeam(members) {
   return names;
 }
 
-let dfdf = createDreamTeam(4);
+let dfdf = createDreamTeam(['  matt', 'Ann', 'Dmitry', 'Max']);
 
 module.exports = {
   createDreamTeam
