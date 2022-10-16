@@ -30,6 +30,7 @@ class VigenereCipheringMachine {
    if(!message || !key){
     throw new Error('Incorrect arguments!');
    }
+
    let result = '';
    message = message.toUpperCase();
    key = key.toUpperCase();
@@ -42,6 +43,7 @@ class VigenereCipheringMachine {
       n--;
     }
    }
+   
    if(!this.isDirectMachine) {
     return Array.from(result).reverse().join('');
    } else return result;
@@ -53,6 +55,7 @@ class VigenereCipheringMachine {
     if(!message || !key){
       throw new Error('Incorrect arguments!');
     }
+
     let result = '';
     message = message.toUpperCase();
     key = key.toUpperCase();
@@ -65,6 +68,7 @@ class VigenereCipheringMachine {
         n--;
       }
     }
+
     if(!this.isDirectMachine) {
       return Array.from(result).reverse().join('');
     } else return result;
